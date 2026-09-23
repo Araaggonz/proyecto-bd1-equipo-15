@@ -2,6 +2,119 @@
 
 ## 1. Integrantes: Fernandez Zalazar Jeremias y Gonzalez Avril Araceli 
 
+## 2. Descripción del modelo relacional
+
+El modelo relacional traduce las entidades, atributos y relaciones definidas en la etapa conceptual a un conjunto de tablas, aplicando las reglas de pasaje de modelo entidad-relación a modelo relacional:
+
+- Cada *entidad fuerte* se convierte en una tabla.
+- Cada *relación 1:N* se resuelve agregando una clave foránea en la tabla del lado "N".
+- Cada *relación N:M* se resuelve mediante una tabla intermedia (asociativa) que contiene las claves primarias de ambas entidades participantes, más los atributos propios de la relación.
+
+El supertipo PERSONA y sus subtipos CLIENTE, VENDEDOR y PROVEEDOR se mantuvieron como tablas separadas, vinculadas entre sí mediante el DNI, respetando el mismo criterio de especialización definido en el diseño conceptual.
+
+---
+
+## 3. Tablas resultantes y sus atributos
+
+### 3.1 PERSONA
+
+| Atributo | Tipo de clave |
+|---|---|
+| DNI | PK |
+| Nombre | |
+| Apellido | |
+| Telefono | (U) |
+| Correo_Electronico | (U) |
+
+Concentra los datos comunes a los tres roles (cliente, vendedor, proveedor).
+
+### 3.2 CLIENTE
+
+| Atributo | Tipo de clave |
+|---|---|
+| DNI | PK, FK → PERSONA |
+| Id_Cliente | (U) |
+
+### 3.3 VENDEDOR
+
+| Atributo | Tipo de clave |
+|---|---|
+| DNI | PK, FK → PERSONA |
+| Id_Vendedor | (U) |
+
+### 3.4 PROVEEDOR
+
+| Atributo | Tipo de clave |
+|---|---|
+| DNI | PK, FK → PERSONA |
+| Id_Proveedor | (U) |
+| Direccion | |
+
+### 3.5 PRODUCTO
+
+| Atributo | Tipo de clave |
+|---|---|
+| Id_Producto | PK |
+| Stock_Actual | |
+| Descripcion | |
+| Nombre | |
+| Id_Categoria | FK → CATEGORIA |
+
+### 3.6 CATEGORIA
+
+| Atributo | Tipo de clave |
+|---|---|
+| Id_Categoria | PK |
+| Nombre | |
+| Descripcion | |
+
+### 3.7 METODO_PAGO
+
+| Atributo | Tipo de clave |
+|---|---|
+| Id_Metodo | PK |
+| Tipo_Metodo | |
+
+### 3.8 VENTA
+
+| Atributo | Tipo de clave |
+|---|---|
+| Id_Venta | PK |
+| Fecha | |
+| Total | |
+| Id_Metodo | FK → METODO_PAGO |
+| DNI | FK → CLIENTE |
+| DNI | FK → VENDEDOR |
+
+Concentra dos referencias a persona porque la venta necesita registrar tanto quién compró como quién la vendió.
+
+### 3.9 COMPRA
+
+| Atributo | Tipo de clave |
+|---|---|
+| Id_Compra | PK |
+| Total | |
+| Fecha | |
+| DNI | FK → VENDEDOR |
+| DNI | FK → PROVEEDOR |
+
+### 3.10 PRODUCTO-VENTA (tabla asociativa)
+
+| Atributo | Tipo de clave |
+|---|---|
+| Id_Venta | PK, FK → VENTA |
+| Id_Producto | PK, FK → PRODUCTO |
+| Precio_Unitario | |
+| Cantidad | |
+
+### 3.11 PRODUCTO-COMPRA (tabla asociativa)
+
+| Atributo | Tipo de clave |
+|---|---|
+| Id_Producto | PK, FK → PRODUCTO |
+| Id_Compra | PK, FK → COMPRA |
+| Precio_Unitario | |
+| Cantidad | |
 
 
 ## 4. Claves primarias
