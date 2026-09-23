@@ -114,63 +114,61 @@ El diagrama representa las entidades, atributos, relaciones y cardinalidades def
 
 
 
-## 4. Relaciones y cardinalidades
+## 6. Relaciones y cardinalidades
 
-En el modelo conceptual se definieron las relaciones necesarias para representar las principales operaciones del sistema. Para cada relación se established las cardinalidades mínima y máxima de participación de cada entidad, teniendo en cuenta las reglas de negocio definidas para el sistema.
+En el modelo conceptual se definieron las relaciones necesarias para representar las principales operaciones del sistema. Para cada relación se establecieron las cardinalidades mínima y máxima de participación de cada entidad, teniendo en cuenta las reglas de negocio definidas para el sistema.
 
-### 4.1 Cliente – Venta
+### 6.1 Cliente – Venta
 * **Relación:** realiza
 * **Cardinalidades:** CLIENTE (0,N) – VENTA (1,1)
 * **Descripción:** Un cliente puede realizar ninguna o varias ventas, mientras que cada venta pertenece a un único cliente.
 
-### 4.2 Vendedor – Venta
+### 6.2 Vendedor – Venta
 * **Relación:** registra
 * **Cardinalidades:** VENDEDOR (0,N) – VENTA (1,1)
 * **Descripción:** Un vendedor puede registrar ninguna o varias ventas, mientras que cada venta es registrada por un único vendedor.
 
-### 4.3 Venta – Producto
+### 6.3 Venta – Producto
 * **Relación:** contiene
 * **Cardinalidades:** VENTA (1,N) – PRODUCTO (0,N)
 * **Descripción:** Una venta contiene uno o varios productos y un producto puede formar parte de ninguna o varias ventas. La relación posee los atributos cantidad, precio_unitario y subtotal.
 
-### 4.4 Venta – Método de pago
+### 6.4 Venta – Método de pago
 * **Relación:** tiene
 * **Cardinalidades:** VENTA (1,1) – METODO_PAGO (0,N)
 * **Descripción:** Cada venta utiliza un único método de pago, mientras que un método de pago puede ser utilizado en ninguna o varias ventas.
 
-### 4.5 Vendedor – Compra
+### 6.5 Vendedor – Compra
 * **Relación:** registra
 * **Cardinalidades:** VENDEDOR (0,N) – COMPRA (1,1)
 * **Descripción:** Un vendedor puede registrar ninguna o varias compras, mientras que cada compra es registrada por un único vendedor.
 
-### 4.6 Proveedor – Compra
+### 6.6 Proveedor – Compra
 * **Relación:** abastece
 * **Cardinalidades:** PROVEEDOR (0,N) – COMPRA (1,1)
 * **Descripción:** Un proveedor puede abastecer ninguna o varias compras, mientras que cada compra está asociada a un único proveedor.
 
-### 4.7 Compra – Producto
+### 6.7 Compra – Producto
 * **Relación:** contiene
 * **Cardinalidades:** COMPRA (1,N) – PRODUCTO (0,N)
 * **Descripción:** Una compra contiene uno o varios productos y un producto puede aparecer en ninguna o varias compras. La relación registra la cantidad adquirida.
 
-### 4.8 Producto – Categoría
+### 6.8 Producto – Categoría
 * **Relación:** pertenece
 * **Cardinalidades:** PRODUCTO (1,1) – CATEGORIA (0,N)
 * **Descripción:** Cada producto pertenece a una única categoría, mientras que una categoría puede contener ninguno o varios productos.
 
-### 4.9 Producto – Merma
+### 6.9 Producto – Merma
 * **Relación:** registra
 * **Cardinalidades:** PRODUCTO (0,N) – MERMA (1,1)
 * **Descripción:** Un producto puede registrar ninguna o varias mermas, mientras que cada merma corresponde a un único producto.
 
-### 4.10 Venta – Comprobante
+### 6.10 Venta – Comprobante
 * **Relación:** tiene
 * **Cardinalidades:** Por definir
 * **Descripción:** Permite asociar una venta con su comprobante y conservar la información correspondiente a la operación. La cardinalidad se establecerá según la decisión final del grupo.
 
----
-
-### 4.11 Atributos de las relaciones
+### 6.11 Atributos de las relaciones
 
 Algunas relaciones poseen información propia que no corresponde exclusivamente a una de las entidades involucradas.
 
@@ -186,7 +184,7 @@ Estos atributos se encuentran asociados a las relaciones porque describen la par
 
 ---
 
-### 7.2 Participación en la definición de relaciones y cardinalidades
-* **Integrantes:** Encinas Priscila y Luciana Carballo
-* **Contribución:** Participación en la definición de relaciones y cardinalidades.
+## 7. Trabajo realizado por cada integrante
 
+### 7.1 Integrante 1:
+* **Contribución:** Participación en la identificación y definición de entidades, atributos y especialización del modelo.
