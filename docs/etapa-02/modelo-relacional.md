@@ -169,3 +169,5 @@ El atributo Total de VENTA y COMPRA sigue figurando como columna en la tabla, au
 ## 8. Trabajo realizado por cada integrante
 
 Integrante 1 - Avril: participación en el diseño de las tablas, definición de atributos y determinación de claves primarias y foráneas de cada entidad.
+
+Integrante 2: participación en la resolución de las relaciones N:M mediante tablas asociativas, y en la revisión general de la coherencia entre el modelo conceptual y el relacional.
