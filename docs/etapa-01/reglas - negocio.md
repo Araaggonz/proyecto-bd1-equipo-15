@@ -72,6 +72,25 @@ El sistema debe permitir registrar el método de pago utilizado en cada venta.
 
 Cada venta debe registrar un único método de pago.
 
+### RN.08 – Stock mínimo
+El sistema debe permitir establecer un nivel de stock mínimo para cada producto. Cuando las existencias alcancen o queden por debajo de dicho límite, el producto debe identificarse para su reposición.
+
+### RN.09 – Mermas 
+El sistema debe permitir registrar las pérdidas de productos ocasionadas por marchitamiento, plagas o daños. Cada Universidad Nacional del Nordeste Facultad de Ciencias Exactas y Naturales y Agrimensura merma debe indicar fecha, cantidad y motivo, y debe descontarse del stock sin asociarse a una venta. 
+
+### RN.10 – Comprobantes 
+El sistema debe permitir conservar los comprobantes de venta y su información histórica. Los comprobantes no deben eliminarse físicamente y, en caso de cancelación o devolución autorizada, deben conservarse y pasar a un estado de anulación. 
+
+## Reglas de negocio Implícitas
+
+### RN.11 – Integridad histórica
+Los clientes, productos y proveedores que posean operaciones históricas no deben eliminarse físicamente, sino mantenerse mediante un estado activo/inactivo.
+
+### RN.12 – Integridad del stock
+El stock disponible de cada producto debe mantenerse consistente con los movimientos de entrada y salida registrados en el sistema.
+
+### RN.13 – Conservación histórica
+La información asociada a operaciones ya realizadas debe conservarse sin modificaciones que alteren los datos históricos de dichas operaciones. 
 Los métodos de pago permitidos son:
 
 * Efectivo.
