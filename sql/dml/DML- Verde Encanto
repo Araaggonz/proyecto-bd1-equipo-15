@@ -1,0 +1,71 @@
+INSERT INTO Vendedor (id_vendedor,DNI_vendedor) VALUES
+(1,43576421);
+
+INSERT INTO Vendedor (id_vendedor,DNI_vendedor) VALUES
+(2,42158367);
+
+INSERT INTO Vendedor (id_vendedor,DNI_vendedor) VALUES
+(3,39874521);
+
+INSERT INTO Vendedor (id_vendedor,DNI_vendedor) VALUES
+(4,45231698);
+
+INSERT INTO Vendedor (id_vendedor,DNI_vendedor) VALUES
+(5,37654129);
+
+INSERT INTO Vendedor (id_vendedor,DNI_vendedor) VALUES
+(6,41452873);
+
+INSERT INTO Vendedor (id_vendedor,DNI_vendedor) VALUES
+(7,46783215);
+
+INSERT INTO Vendedor (id_vendedor,DNI_vendedor) VALUES
+(8,38962147);
+
+INSERT INTO Venta (id_venta,fecha_,total,id_metodo,id_comprobante,id_cliente,id_vendedor) VALUES
+(1,'2026-09-01',12500.00,1,1,1,1);
+
+INSERT INTO Venta (id_venta,fecha_,total,id_metodo,id_comprobante,id_cliente,id_vendedor) VALUES
+(2,'2026-09-03',18750.50,2,2,2,2);
+
+INSERT INTO Venta (id_venta,fecha_,total,id_metodo,id_comprobante,id_cliente,id_vendedor) VALUES
+(3,'2026-09-05',9500.00,3,3,3,3);
+
+INSERT INTO Venta (id_venta,fecha_,total,id_metodo,id_comprobante,id_cliente,id_vendedor) VALUES
+(4,'2026-09-08',22300.75,4,4,4,4);
+
+INSERT INTO Venta (id_venta,fecha_,total,id_metodo,id_comprobante,id_cliente,id_vendedor) VALUES
+(5,'2026-09-10',15780.00,1,5,5,5);
+
+INSERT INTO Venta (id_venta,fecha_,total,id_metodo,id_comprobante,id_cliente,id_vendedor) VALUES
+(6,'2026-09-15',31250.25,2,6,6,6);
+
+INSERT INTO Venta (id_venta,fecha_,total,id_metodo,id_comprobante,id_cliente,id_vendedor) VALUES
+(7,'2026-09-20',8900.00,3,7,7,7);
+
+INSERT INTO Venta (id_venta,fecha_,total,id_metodo,id_comprobante,id_cliente,id_vendedor) VALUES
+(8,'2026-09-25',27450.50,4,8,8,8);
+
+INSERT INTO Compra (id_compra,total,fecha_,id_proveedor,id_vendedor) VALUES
+(1,45000.00,'2026-09-01',1,1);
+
+INSERT INTO Compra (id_compra,total,fecha_,id_proveedor,id_vendedor) VALUES
+(2,32750.50,'2026-09-04',2,2);
+
+INSERT INTO Compra (id_compra,total,fecha_,id_proveedor,id_vendedor) VALUES
+(3,58900.00,'2026-09-07',3,3);
+
+INSERT INTO Compra (id_compra,total,fecha_,id_proveedor,id_vendedor) VALUES
+(4,41250.75,'2026-09-10',4,4);
+
+INSERT INTO Compra (id_compra,total,fecha_,id_proveedor,id_vendedor) VALUES
+(5,63500.00,'2026-09-13',5,5);
+
+INSERT INTO Compra (id_compra,total,fecha_,id_proveedor,id_vendedor) VALUES
+(6,29800.25,'2026-09-17',6,6);
+
+INSERT INTO Compra (id_compra,total,fecha_,id_proveedor,id_vendedor) VALUES
+(7,52100.00,'2026-09-21',7,7);
+
+INSERT INTO Compra (id_compra,total,fecha_,id_proveedor,id_vendedor) VALUES
+(8,36750.50,'2026-09-26',8,8);
