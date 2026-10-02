@@ -171,3 +171,123 @@ La implementación utiliza diferentes restricciones para mantener la integridad 
 * `CHECK` para limitar los valores permitidos.
 
 Estas restricciones permiten implementar parte de las reglas del sistema directamente en la base de datos.
+
+
+### Claves primarias compuestas
+
+Las tablas `Producto_Venta` y `Producto_Compra` representan el detalle de las operaciones y utilizan claves primarias compuestas.
+
+En `Producto_Venta`:
+
+```sql
+CONSTRAINT PK_producto_venta PRIMARY KEY (id_producto, id_venta)
+```
+
+En `Producto_Compra`:
+
+```sql
+CONSTRAINT PK_producto_compra PRIMARY KEY (id_producto, id_compra)
+```
+La combinación de ambos identificadores permite identificar de manera única cada producto dentro de una determinada venta o compra.
+
+
+## 10. Relaciones entre Persona, Cliente, Proveedor y Vendedor
+
+La tabla `Persona` almacena los datos generales de las personas.
+
+Las tablas `Cliente`, `Proveedor` y `Vendedor` poseen una referencia al `DNI` de `Persona`, permitiendo asociar una persona con el rol que desempeña dentro del sistema.
+
+Por ejemplo:
+
+```sql
+CONSTRAINT FK_persona_cliente
+FOREIGN KEY (DNI_cliente) REFERENCES Persona(DNI)
+```
+
+De esta manera, el sistema evita registrar un cliente asociado a una persona inexistente.
+
+# 11. Gestión de productos y stock
+
+La tabla `Producto` contiene información sobre los productos comercializados por el vivero.
+
+Entre sus atributos se encuentran:
+
+* `id_producto`
+* `nombre`
+* `descripcion`
+* `stock_actual`
+* `stock_minimo`
+* `estado`
+* `id_categoria`
+
+El producto se relaciona con `Categoria` mediante `id_categoria`.
+
+Además, se incorporaron restricciones para controlar los valores de stock:
+
+```sql
+CHECK (stock_actual >= 0)
+```
+y:
+
+```sql
+CHECK (stock_minimo >= 0)
+```
+Estas restricciones impiden registrar valores negativos.
+
+
+## 12. Restricciones sobre cantidades y precios
+
+Se establecieron restricciones `CHECK` para garantizar que las cantidades y precios sean válidos.
+
+En las ventas:
+
+```sql
+CHECK (cantidad > 0)
+```
+y:
+
+```sql
+CHECK (precio_unitario > 0)
+```
+
+En las compras se aplican las mismas condiciones.
+
+Para las mermas también se establece:
+
+```sql
+CHECK (cantidad > 0)
+```
+De esta forma, no se permiten cantidades iguales o menores que cero en estas operaciones.
+
+
+## 13. Restricciones de unicidad
+
+Se utilizaron restricciones `UNIQUE` para evitar valores duplicados.
+
+En `Persona`, el teléfono y el correo electrónico deben ser únicos:
+
+```sql
+CONSTRAINT UQ_persona_telefono UNIQUE (telefono)
+
+CONSTRAINT UQ_persona_correo UNIQUE (correo_electronico)
+```
+
+También se establece que el número de comprobante no puede repetirse:
+
+```sql
+CONSTRAINT UQ_comprobante_numero UNIQUE (numero)
+```
+
+## 14. Uso de NOT NULL
+
+Los atributos definidos como `NOT NULL` son campos obligatorios.
+
+Por ejemplo:
+
+```sql
+DNI VARCHAR(10) NOT NULL
+```
+
+Esto significa que no se puede crear un registro de `Persona` sin proporcionar un DNI.
+
+El uso de `NOT NULL` permite reforzar desde la base de datos aquellos datos que son necesarios para el funcionamiento del sistema.
