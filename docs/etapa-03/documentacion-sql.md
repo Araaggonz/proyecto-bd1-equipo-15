@@ -287,6 +287,13 @@ Por ejemplo:
 ```sql
 DNI VARCHAR(10) NOT NULL
 ```
+## 15. Código fuente
+
+El código SQL ddl utilizado para la creación de la base de datos se encuentra en:
+
+[`sql/DDL/script.sql`](../../SQL/ddl/script.sql)
+
+
 
 Esto significa que no se puede crear un registro de `Persona` sin proporcionar un DNI.
 
