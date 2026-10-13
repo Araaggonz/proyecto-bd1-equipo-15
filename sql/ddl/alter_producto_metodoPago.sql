@@ -13,8 +13,6 @@ ADD CONSTRAINT CK_metodo_tipo CHECK (tipo_metodo_ IN ('EFECTIVO', 'TARJETA_DEBIT
 
 -- 3) Producto: agregar reglas de borrado/modificacion a la FK con Categoria
 -- Primero hay que borrar la FK vieja (sin reglas) y crearla de nuevo con las reglas.
--- OJO: si tu compañera le puso otro nombre a esta constraint, cambialo acá
--- (fijate en SSMS: Object Explorer > Producto > Keys, para confirmar el nombre real).
 ALTER TABLE Producto
 DROP CONSTRAINT FK_producto_categoria;
 
