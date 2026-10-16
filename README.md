@@ -80,6 +80,9 @@ El sistema contempla, entre otras, las siguientes funcionalidades:
 | Tipo | Descripción | Archivo |
 |:----:|-------------|---------|
 | DDL | Creación de la estructura de la base de datos | [script.sql](SQL/ddl/script.sql) |
+| DML | Inserción de datos de prueba | [Insert Ordenado](./Insert%20Ordenado) |
+| DML | Scripts de inserción | [Archivos DML](sql/dml/) |
+| Consultas | Consultas y reportes de ventas | [Consultas SQL](sql/consultas/) |
 
 ## 👥 Integrantes
 
