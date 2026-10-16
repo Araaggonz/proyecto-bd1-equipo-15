@@ -60,10 +60,10 @@ El sistema contempla, entre otras, las siguientes funcionalidades:
 
 | Etapa | Descripción | Documento |
 |:-----:|-------------|-----------|
-| 1 | Relevamiento y definición | [Documentación de la Etapa 1](docs/etapa-01/documentacion-etapa01.md) |
+| 1 | Alcance y funcionalidades | [Documentación de la Etapa 1](docs/etapa-01/alcance-funcionalidaddes.md) |
 | 2 | Modelo conceptual | [Modelo conceptual](docs/etapa-02/modelo-conceptual.md) |
-| 3 | Implementación SQL | [Documentación de la Etapa 3](docs/etapa-03/documentacion.sql.md) |
-| 4 |  | [Documentación de la Etapa 3](docs/etapa-03/documentacion.sql.md) |
+| 3 | Implementación SQL | [Documentación de la Etapa 3](docs/etapa-03/ddl.sql.md) |
+| 4 | Consultas SQL y reportes | [Documentación de la Etapa 4](docs/etapa-04/ReporteAgregado.md) |
 
 ## Modelos
 
