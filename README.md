@@ -1,15 +1,46 @@
-# proyecto-bd1-equipo-15
-Proyecto de Base de Datos I para la gestión de ventas, stock y abastecimiento de un vivero y tienda de jardinería. incluye el diseño, normalización e implementación de la base de datoS
+<div align="center">
 
-Este proyecto consiste en el diseño y desarrollo de una base de datos para un sistema de gestión comercial de un vivero.
+<img src="assets/logo-verde-encanto.png" alt="Logo Verde Encanto" width="280"/>
 
-El sistema permitirá administrar la información relacionada con productos, clientes, proveedores y las operaciones comerciales de compra y venta, incluyendo el control del stock y los métodos de pago.
+# 🌿 Verde Encanto
+### Sistema de gestión de ventas, stock y abastecimiento para un vivero y tienda de jardinería
 
-## Objetivo
+**Proyecto de Base de Datos I · Equipo 15**
 
-El objetivo del proyecto es diseñar una base de datos que permita gestionar de manera organizada y consistente la información relacionada con las operaciones comerciales del vivero.
+![SQL Server](https://img.shields.io/badge/SQL%20Server-4E7A2E?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
+![SSMS](https://img.shields.io/badge/SSMS-6B8F47?style=for-the-badge&logo=microsoft&logoColor=white)
+![Git](https://img.shields.io/badge/Git-4E7A2E?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-6B8F47?style=for-the-badge&logo=github&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-4E7A2E?style=for-the-badge&logo=markdown&logoColor=white)
 
-Se busca garantizar la integridad de los datos y facilitar la gestión de clientes, proveedores, productos, compras, ventas y stock.
+</div>
+
+---
+
+## Tabla de contenidos
+
+- [Descripción](#descripción)
+- [Objetivo](#objetivo)
+- [Alcance](#alcance)
+- [Documentación del proyecto](#documentación-del-proyecto)
+- [Modelos](#modelos)
+- [Código SQL](#código-sql)
+- [Integrantes](#integrantes)
+- [Tecnologías y herramientas](#tecnologías-y-herramientas)
+
+---
+
+## 🌱 Descripción del proyecto
+
+Este proyecto consiste en el **diseño, normalización e implementación** de una base de datos para un sistema de gestión comercial de un vivero y tienda de jardinería.
+
+El sistema permite administrar la información relacionada con productos, clientes, proveedores y las operaciones comerciales de compra y venta, incluyendo el control del stock y los métodos de pago.
+
+## 🎯 Objetivos
+
+Diseñar una base de datos que permita gestionar de manera organizada y consistente la información de las operaciones comerciales del vivero.
+
+Se busca garantizar la **integridad de los datos** y facilitar la gestión de clientes, proveedores, productos, compras, ventas y stock.
 
 ## Alcance
 
@@ -25,45 +56,43 @@ El sistema contempla, entre otras, las siguientes funcionalidades:
 - Registro de los detalles de las operaciones.
 - Generación y conservación de comprobantes.
 
-## Documentación del proyecto
+## 📚 Etapas del proyecto
 
-### Etapa 1 - Relevamiento y definición
-
-[Documentación de la Etapa 1](docs/etapa-01/documentacion-etapa01.md)
-
-### Etapa 2 - Modelo conceptual
-
-[Modelo conceptual](docs/etapa-02/modelo-conceptual.md)
+| Etapa | Descripción | Documento |
+|:-----:|-------------|-----------|
+| 1 | Relevamiento y definición | [Documentación de la Etapa 1](docs/etapa-01/documentacion-etapa01.md) |
+| 2 | Modelo conceptual | [Modelo conceptual](docs/etapa-02/modelo-conceptual.md) |
+| 3 | Implementación SQL | [Documentación de la Etapa 3](docs/etapa-03/documentacion.sql.md) |
+| 4 |  | [Documentación de la Etapa 3](docs/etapa-03/documentacion.sql.md) |
 
 ## Modelos
 
 ### Modelo conceptual
 
+<div align="center">
+
 ![Modelo conceptual](modelos/der/modelo-conceptual.png)
 
-### Etapa 3 - Implementacion SQL 
+</div>
 
-[Documentacion de la etapa 3](docs/etapa-03/documentacion.sql.md)
+## Código SQL
 
-## Codigo SQL
+| Tipo | Descripción | Archivo |
+|:----:|-------------|---------|
+| DDL | Creación de la estructura de la base de datos | [script.sql](SQL/ddl/script.sql) |
 
-### DDL
+## 👥 Integrantes
 
-![codigo DDL](SQL/ddl/script.sql)
+- Craballo Jara Luciana Abril
+- Encinas Priscila Ayelen
+- Gonzalez Avril Araceli
+- Fernández Zalazar Jeremías Ezequiel
+- Belen Chaile
 
-## Integrantes
+---
 
--Luciana Carballo
--
--
--
--
+<div align="center">
 
-## Tecnologías y herramientas
+🌿 *Proyecto académico · Base de Datos I · Equipo 15*
 
-SQL Server
-SQL Server Management Studio
-Git
-GitHub
-Markdown
-ERDPlus
+</div>
