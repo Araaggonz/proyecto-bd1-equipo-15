@@ -284,7 +284,7 @@ SELECT COUNT(*) AS cantidad_categorias
 FROM Categoria;
 
 
--- 1. Total de ventas por vendedor en un rango de fechas
+---Total de ventas por vendedor en un rango de fechas
 SELECT
     id_vendedor,
     COUNT(*) AS cantidad_ventas,
@@ -295,8 +295,7 @@ WHERE fecha_ >= '2026-05-01'
 GROUP BY id_vendedor;
 
 
--- 2. Total de ventas por categoría de producto
---    en un rango de fechas
+---Total de ventas por categoría de producto en un rango de fechas
 SELECT
     C.id_categoria,
     C.nombre_,
@@ -315,6 +314,34 @@ WHERE V.fecha_ >= '2026-09-01'
 GROUP BY
     C.id_categoria,
     C.nombre_;
+
+
+---Ventas que incluyen productos de una categoría específica
+SELECT DISTINCT
+    V.id_venta,
+    V.fecha_,
+    V.total
+FROM Venta AS V
+INNER JOIN Producto_Venta AS PV
+    ON V.id_venta = PV.id_venta
+INNER JOIN Producto AS P
+    ON PV.id_producto = P.id_producto
+INNER JOIN Categoria AS C
+    ON P.id_categoria = C.id_categoria
+WHERE C.nombre_ = 'Plantas de interior'
+  AND V.fecha_ >= '2026-03-01'
+  AND V.fecha_ < '2026-04-01';
+
+
+---mostrar los productos que necesitan reposicion 
+
+  SELECT
+    id_producto,
+    nombre,
+    stock_actual,
+    stock_minimo
+FROM Producto
+WHERE stock_actual <= stock_minimo;
 
 
 
