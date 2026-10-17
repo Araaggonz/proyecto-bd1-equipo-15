@@ -103,32 +103,6 @@ INSERT INTO Cliente (id_cliente,DNI_cliente) VALUES
 
 SELECT * FROM Cliente;
 
-INSERT INTO Proveedor (id_proveedor,direccion,DNI_proveedor) VALUES
-(1,'San Martin 1234',43576421);
-
-INSERT INTO Proveedor (id_proveedor,direccion,DNI_proveedor) VALUES
-(2,'Junin 567',42158367);
-
-INSERT INTO Proveedor (id_proveedor,direccion,DNI_proveedor) VALUES
-(3,'Belgrano 890',39874521);
-
-INSERT INTO Proveedor (id_proveedor,direccion,DNI_proveedor) VALUES
-(4,'25 de Mayo 456',45231698);
-
-INSERT INTO Proveedor (id_proveedor,direccion,DNI_proveedor) VALUES
-(5,'Bolivar 789',37654129);
-
-INSERT INTO Proveedor (id_proveedor,direccion,DNI_proveedor) VALUES
-(6,'Colon 321',41452873);
-
-INSERT INTO Proveedor (id_proveedor,direccion,DNI_proveedor) VALUES
-(7,'Mendoza 654',46783215);
-
-INSERT INTO Proveedor (id_proveedor,direccion,DNI_proveedor) VALUES
-(8,'Rivadavia 987',38962147);
-
-SELECT * FROM Proveedor;
-
 INSERT INTO Vendedor (id_vendedor,DNI_vendedor) VALUES
 (1,43576421);
 
@@ -195,32 +169,6 @@ INSERT INTO Venta (id_venta,fecha_,total,id_metodo,id_comprobante,id_cliente,id_
 
 SELECT * FROM Venta;
 
-INSERT INTO Compra (id_compra,total,fecha_,id_proveedor,id_vendedor) VALUES
-(1,45000.00,'2026-09-01',1,3);
-
-INSERT INTO Compra (id_compra,total,fecha_,id_proveedor,id_vendedor) VALUES
-(2,32750.50,'2026-09-04',1,2);
-
-INSERT INTO Compra (id_compra,total,fecha_,id_proveedor,id_vendedor) VALUES
-(3,58900.00,'2026-07-07',3,8);
-
-INSERT INTO Compra (id_compra,total,fecha_,id_proveedor,id_vendedor) VALUES
-(4,41250.75,'2026-02-10',3,4);
-
-INSERT INTO Compra (id_compra,total,fecha_,id_proveedor,id_vendedor) VALUES
-(5,63500.00,'2026-02-13',3,2);
-
-INSERT INTO Compra (id_compra,total,fecha_,id_proveedor,id_vendedor) VALUES
-(6,29800.25,'2026-02-17',3,4);
-
-INSERT INTO Compra (id_compra,total,fecha_,id_proveedor,id_vendedor) VALUES
-(7,52100.00,'2026-02-21',5,7);
-
-INSERT INTO Compra (id_compra,total,fecha_,id_proveedor,id_vendedor) VALUES
-(8,36750.50,'2026-07-26',5,8);
-
-SELECT * FROM Compra;
-
 INSERT INTO Producto_Venta (precio_unitario, cantidad, sub_total, id_producto, id_venta) VALUES
 (2500.00, 5, 12500.00, 1, 1),
 (1500.10, 5, 7500.50, 2, 2),
@@ -234,54 +182,6 @@ INSERT INTO Producto_Venta (precio_unitario, cantidad, sub_total, id_producto, i
 (1800.00, 2, 3600.00, 10, 8);
 
 SELECT * FROM Producto_Venta;
-
-INSERT INTO Producto_Compra (precio_unitario, cantidad, subtotal_, id_producto, id_compra) VALUES
-(1500.00, 30, 45000.00, 1, 1),
-(1310.02, 25, 32750.50, 2, 2),
-(2945.00, 20, 58900.00, 3, 3),
-(2750.05, 15, 41250.75, 4, 4),
-(1270.00, 50, 63500.00, 5, 5),
-(800.00, 20, 16000.00, 6, 6),
-(552.01, 25, 13800.25, 7, 6),
-(2000.00, 10, 20000.00, 8, 7),
-(2140.00, 15, 32100.00, 9, 7),
-(3675.05, 10, 36750.50, 10, 8);
-
-SELECT * FROM Producto_Compra;
-
-INSERT INTO Merma (id_merma,motivo,fecha,cantidad,id_producto) VALUES
-(1,'Producto vencido','2026-06-01',5,1);
-
-INSERT INTO Merma (id_merma,motivo,fecha,cantidad,id_producto) VALUES
-(2,'Producto dañado','2026-06-03',3,2);
-
-INSERT INTO Merma (id_merma,motivo,fecha,cantidad,id_producto) VALUES
-(3,'Envase roto','2026-03-05',2,3);
-
-INSERT INTO Merma (id_merma,motivo,fecha,cantidad,id_producto) VALUES
-(4,'Producto vencido','2026-02-08',4,4);
-
-INSERT INTO Merma (id_merma,motivo,fecha,cantidad,id_producto) VALUES
-(5,'Mala conservación','2026-02-10',6,5);
-
-INSERT INTO Merma (id_merma,motivo,fecha,cantidad,id_producto) VALUES
-(6,'Producto dañado','2026-08-15',2,6);
-
-INSERT INTO Merma (id_merma,motivo,fecha,cantidad,id_producto) VALUES
-(7,'Envase roto','2026-08-20',3,7);
-
-INSERT INTO Merma (id_merma,motivo,fecha,cantidad,id_producto) VALUES
-(8,'Producto vencido','2026-08-25',1,8);
-
-SELECT * FROM Merma;
-
----comprobar
-SELECT COUNT(*) AS cantidad_personas
-FROM Persona;
-
-
-SELECT COUNT(*) AS cantidad_categorias
-FROM Categoria;
 
 
 ---Total de ventas por vendedor en un rango de fechas
@@ -343,6 +243,26 @@ WHERE C.nombre_ = 'Plantas de interior'
 FROM Producto
 WHERE stock_actual <= stock_minimo;
 
+
+---subconsultas
+
+----productos que se vendieron
+
+SELECT *
+FROM Producto
+WHERE id_producto IN (
+    SELECT id_producto
+    FROM Producto_Venta
+);
+
+---clientes que realizaron compras 
+
+SELECT *
+FROM Cliente
+WHERE id_cliente IN (
+    SELECT id_cliente
+    FROM Venta
+);
 
 
 
