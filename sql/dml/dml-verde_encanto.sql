@@ -30,6 +30,7 @@ INSERT INTO Persona (DNI,nombre,apellido,telefono,correo_electronico) VALUES
 INSERT INTO Persona (DNI,nombre,apellido,telefono,correo_electronico) VALUES
 (42896731,'Mariana','Torres','+543794638215','marianatorres@gmail.com');
 
+
 ---más registros de Persona
 
 INSERT INTO Persona (DNI,nombre,apellido,telefono,correo_electronico) VALUES
@@ -82,6 +83,7 @@ INSERT INTO Proveedor (id_proveedor,direccion,DNI_proveedor) VALUES
 INSERT INTO Proveedor (id_proveedor,direccion,DNI_proveedor) VALUES
 (8,'Rivadavia 987',34586922);
 
+
 ---registros de clientes
 
 INSERT INTO Cliente (id_cliente,DNI_cliente) VALUES
@@ -108,54 +110,56 @@ INSERT INTO Cliente (id_cliente,DNI_cliente) VALUES
 INSERT INTO Cliente (id_cliente,DNI_cliente) VALUES
 (8,42896731);
 
+
 ---registros de comprobantes
 
 INSERT INTO Comprobante (id_comprobante,numero,fecha,estado_) VALUES
 (1,1001,'2026-09-01','Pendiente');
 
 INSERT INTO Comprobante (id_comprobante,numero,fecha,estado_) VALUES
-(2,1002,'2026-09-03','Pagado');
+(2,1002,'2026-09-01','Pagado');
 
 INSERT INTO Comprobante (id_comprobante,numero,fecha,estado_) VALUES
-(3,1003,'2026-09-05','Pendiente');
+(3,1003,'2026-05-05','Pendiente');
 
 INSERT INTO Comprobante (id_comprobante,numero,fecha,estado_) VALUES
-(4,1004,'2026-09-08','Pagado');
+(4,1004,'2026-05-08','Pagado');
 
 INSERT INTO Comprobante (id_comprobante,numero,fecha,estado_) VALUES
-(5,1005,'2026-09-10','Cancelado');
+(5,1005,'2026-05-10','Cancelado');
 
 INSERT INTO Comprobante (id_comprobante,numero,fecha,estado_) VALUES
-(6,1006,'2026-09-15','Pagado');
+(6,1006,'2026-03-15','Pagado');
 
 INSERT INTO Comprobante (id_comprobante,numero,fecha,estado_) VALUES
-(7,1007,'2026-09-20','Pendiente');
+(7,1007,'2026-03-20','Pendiente');
 
 INSERT INTO Comprobante (id_comprobante,numero,fecha,estado_) VALUES
 (8,1008,'2026-09-25','Pagado');
 
+
 ---registros de mermas
 
 INSERT INTO Merma (id_merma,motivo,fecha,cantidad,id_producto) VALUES
-(1,'Producto vencido','2026-09-01',5,1);
+(1,'Producto vencido','2026-06-01',5,1);
 
 INSERT INTO Merma (id_merma,motivo,fecha,cantidad,id_producto) VALUES
-(2,'Producto dañado','2026-09-03',3,2);
+(2,'Producto dañado','2026-06-03',3,2);
 
 INSERT INTO Merma (id_merma,motivo,fecha,cantidad,id_producto) VALUES
-(3,'Envase roto','2026-09-05',2,3);
+(3,'Envase roto','2026-03-05',2,3);
 
 INSERT INTO Merma (id_merma,motivo,fecha,cantidad,id_producto) VALUES
-(4,'Producto vencido','2026-09-08',4,4);
+(4,'Producto vencido','2026-02-08',4,4);
 
 INSERT INTO Merma (id_merma,motivo,fecha,cantidad,id_producto) VALUES
-(5,'Mala conservación','2026-09-10',6,5);
+(5,'Mala conservación','2026-02-10',6,5);
 
 INSERT INTO Merma (id_merma,motivo,fecha,cantidad,id_producto) VALUES
-(6,'Producto dañado','2026-09-15',2,6);
+(6,'Producto dañado','2026-08-15',2,6);
 
 INSERT INTO Merma (id_merma,motivo,fecha,cantidad,id_producto) VALUES
-(7,'Envase roto','2026-09-20',3,7);
+(7,'Envase roto','2026-08-20',3,7);
 
 INSERT INTO Merma (id_merma,motivo,fecha,cantidad,id_producto) VALUES
-(8,'Producto vencido','2026-09-25',1,8);
+(8,'Producto vencido','2026-08-25',1,8);
