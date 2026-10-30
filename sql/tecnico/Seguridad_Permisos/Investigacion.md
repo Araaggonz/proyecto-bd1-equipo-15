@@ -84,29 +84,29 @@ Las pruebas se hicieron con EXECUTE AS USER, que permite asumir la identidad de 
 
 Con usuario_admin la operación se ejecuta correctamente, ya que pertenece a db_owner.
 
-![Captura 1: INSERT directo con usuario_admin](Evidencias/01_insert_admin_ok.png)
+![Captura 1: INSERT directo con usuario_admin](Evidencias/01_insert_admin_ok.PNG)
 
 Con usuario_lector SQL Server rechaza la operación con el error 229: "The INSERT permission was denied on the object 'Venta', database 'VERDE_ENCANTO', schema 'dbo'."
 
-![Captura 2: INSERT directo denegado a usuario_lector](Evidencias/02_insert_lector_denegado.png)
+![Captura 2: INSERT directo denegado a usuario_lector](Evidencias/02_insert_lector_denegado.PNG)
 
 ### Prueba 2: INSERT mediante el procedimiento almacenado
 
 Con usuario_lector, la venta se registra correctamente a través de sp_RegistrarVentaSimple, porque tiene permiso EXECUTE sobre el procedimiento.
 
-![Captura 3: ejecución del procedimiento con usuario_lector](Evidencias/03_exec_procedimiento_lector.png)
+![Captura 3: ejecución del procedimiento con usuario_lector](Evidencias/03_exec_procedimiento_lector.PNG)
 
-![Captura 4: venta registrada en la tabla Venta](Evidencias/04_venta_registrada.png)
+![Captura 4: venta registrada en la tabla Venta](Evidencias/04_venta_registrada.PNG)
 
 ### Prueba 3: SELECT sobre Producto
 
 Con usuario_con_rol la consulta devuelve los productos, porque el usuario es miembro del rol rol_consulta_productos.
 
-![Captura 5: SELECT con usuario_con_rol](Evidencias/05_select_con_rol_ok.png)
+![Captura 5: SELECT con usuario_con_rol](Evidencias/05_select_con_rol_ok.PNG)
 
 Con usuario_sin_rol SQL Server deniega el acceso con el error 229: "The SELECT permission was denied on the object 'Producto', database 'VERDE_ENCANTO', schema 'dbo'."
 
-![Captura 6: SELECT denegado a usuario_sin_rol](Evidencias/06_select_sin_rol_denegado.png)
+![Captura 6: SELECT denegado a usuario_sin_rol](Evidencias/06_select_sin_rol_denegado.PNG)
 
 ### Resumen de resultados
 
