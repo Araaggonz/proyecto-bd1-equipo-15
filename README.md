@@ -76,13 +76,22 @@ El sistema contempla, entre otras, las siguientes funcionalidades:
 
 ## 📚 Etapas del proyecto
 
-| Etapa | Descripción | Documento |
-|:-----:|-------------|-----------|
-| 1 | Alcance y funcionalidades | [Documentación de la Etapa 1](docs/etapa-01/alcance-funcionalidades.md) |
-| 2 | Modelo conceptual | [Modelo conceptual](docs/etapa-02/modelo-conceptual.md) |
-| 3 | Implementación SQL | [Documentación de la Etapa 3](docs/etapa-03/ddl-sql.md) |
-| 4 | Consultas SQL y reportes | [Documentación de la Etapa 4](docs/etapa-04/reporte-agregado.md) |
-| 5 | Temas Técnicos y evolución  | [Documentación de la Etapa 5](docs/etapa-05) |
+## Documentación del proyecto
+
+| Etapa | Tema | Documento | Archivo |
+|:-----:|------|-----------|---------|
+| 1 | Relevamiento y definición | Descripción del caso | [descripcion-caso.md](docs/etapa-01/descripcion-caso.md) |
+| 1 | Relevamiento y definición | Alcance y funcionalidades | [alcance-funcionalidades.md](docs/etapa-01/alcance-funcionalidades.md) |
+| 1 | Relevamiento y definición | Reglas de negocio | [reglas - negocio.md](docs/etapa-01/reglas%20-%20negocio.md) |
+| 2 | Modelo conceptual | Modelo conceptual | [modelo-conceptual.md](docs/etapa-02/modelo-conceptual.md) |
+| 2 | Modelo conceptual | Modelo relacional | [modelo-relacional.md](docs/etapa-02/modelo-relacional.md) |
+| 2 | Modelo conceptual | Normalización | [normalizacion.md](docs/etapa-02/normalizacion.md) |
+| 2 | Modelo conceptual | Decisiones de diseño | [decisiones-diseno.md](docs/etapa-02/decisiones-diseno.md) |
+| 3 | Implementación SQL | Documentación del DDL | [ddl-sql.md](docs/etapa-03/ddl-sql.md) |
+| 4 | Consultas SQL y reportes | Reporte agregado | [reporte-agregado.md](docs/etapa-04/reporte-agregado.md) |
+| 4 | Consultas SQL y reportes | Consulta de negocio avanzada | [consulta-negocio-avanzada.sql](docs/etapa-04/consulta-negocio-avanzada.sql) |
+| 5 | Temas técnicos y evolución | Documentación de la etapa 5 | *Próximamente* |
+
 
 ## Modelos
 
