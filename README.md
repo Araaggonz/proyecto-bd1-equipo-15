@@ -32,9 +32,18 @@
 
 ## 🌱 Descripción del proyecto
 
-Este proyecto consiste en el **diseño, normalización e implementación** de una base de datos para un sistema de gestión comercial de un vivero y tienda de jardinería.
+**Verde Encanto** es un sistema de bases de datos relacional diseñado para un vivero y tienda de jardineria que comercializa plantas de interior y exterior, semillas, macetas, sustratos, fertilizantes, herramientas, sistemas de riego y complementos del ámbito. 
 
-El sistema permite administrar la información relacionada con productos, clientes, proveedores y las operaciones comerciales de compra y venta, incluyendo el control del stock y los métodos de pago.
+El proyecto abarca el **diseño conceptual, el diseño lógico (con normalización) y la implementacion fisica** en **Microsoft SQL Server** e integra en un único modelo la gestión de: 
+
+- **Productos y Categorías**, con precio vigente, stock actual, stock minimo y estado (activo/inactivo).
+- **Personas y sus roles**: Clientes, vendedores y proveedores, modelado a partir de una entidad `Persona` para evitar la duplicacion de datos personales.
+- **Ventas**, con cabecera, detalle por producto, método de pago y comprobante asociado.
+- **Mermas**, es decir, perdidas por marchitamiento, plagas o daños, registradas con fecha, cantidad y motivo.
+
+El modelo contempla situaciones propias del rubro: el **control de stock mínimo¨¨ para identificar productos a reponer, el **historial de precios** (cada detalle de venta conserva el precio unitario vigente al momento de la operación) y la **conservación de comprobantes**, que nunca se eliminan físicamente sino que se pasan a un estado de anulación. 
+
+La integridad de los datos se garantiza a nivel de motor mediante **claves primarias y foráneas** (con reglas de borrado y actualización) restricciones  `UNIQUE ` y  `CHECK ` (stock no negativo, cantidades y precios positivos, métodos de pago validos, estados permitidos), de modo que las reglas de negocio del sistema no dependan únicamente de la aplicación.   
 
 ## 🎯 Objetivos
 
