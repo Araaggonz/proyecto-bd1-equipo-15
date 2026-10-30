@@ -92,6 +92,7 @@ El sistema contempla, entre otras, las siguientes funcionalidades:
 | 4 | Consultas SQL y reportes | Consulta de negocio avanzada | [consulta-negocio-avanzada.sql](docs/etapa-04/consulta-negocio-avanzada.sql) |
 | 5 | Temas técnicos y evolución | Procedimientos y funciones | [Procedimiento_Funciones.md](docs/etapa-05/Procedimiento_Funciones.md) |
 | 5 | Temas técnicos y evolución | Triggers | [Trigger.md](docs/etapa-05/Trigger.md) |
+| 5 | Temas técnicos y evolución | Seguridad | [seguridad.md](docs/etapa-05/seguridad.md) |
 
 
 ## Modelos
