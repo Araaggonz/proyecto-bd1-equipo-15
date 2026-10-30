@@ -94,15 +94,26 @@ El sistema contempla, entre otras, las siguientes funcionalidades:
 
 </div>
 
+
 ## Código SQL
 
 | Tipo | Descripción | Archivo |
 |:----:|-------------|---------|
-| DDL | Creación de la estructura de la base de datos | [script.sql](SQL/ddl/script.sql) |
-| DML | Inserción de datos de prueba | [Insert Ordenado](./Insert%20Ordenado) |
-| DML | Scripts de inserción | [Archivos DML](sql/dml/) |
-| Consultas | Consultas y reportes de ventas | [Consultas SQL](sql/consultas/) |
-| Temas Tecnicos | Procedimientos, funciones, transacciones, triggers | [Tecnico SQL](sql/tecnico/) |
+| DDL | Creación de la estructura de la base de datos | [script.sql](sql/ddl/script.sql) |
+| DDL | Modificación de producto y método de pago | [alter_producto_metodoPago.sql](sql/ddl/alter_producto_metodoPago.sql) |
+| DML | Inserción de datos de prueba | [dml_Verde_Encanto.sql](sql/dml/dml_Verde_Encanto.sql) |
+| DML | Corrección de registros y stock | [Correccion_Registros.sql](sql/dml/Correccion_Registros.sql) |
+| Consultas | Consulta de negocio avanzada | [consulta_avanzada.sql](sql/consultas/consulta_avanzada.sql) |
+| Consultas | Factura y comprobante | [Factura_Comprobante.sql](sql/consultas/Factura_Comprobante.sql) |
+| Consultas | Reporte agregado | [Reporte Agregado.sql](sql/consultas/Reporte%20Agregado.sql) |
+
+### Temas técnicos
+
+| Tema | Descripción | Archivos |
+|:----:|-------------|----------|
+| Procedimientos y funciones | Procedimientos almacenados, funciones y comparaciones | [Procedimiento.sql](sql/tecnico/Procedimiento_Funciones/Procedimiento.sql) · [Funciones.sql](sql/tecnico/Procedimiento_Funciones/Funciones.sql) · [Comparaciones.sql](sql/tecnico/Procedimiento_Funciones/Comparaciones.sql) · [Documentación](sql/tecnico/Procedimiento_Funciones/tema-1-procedimientos-funciones.md) |
+| Seguridad y permisos | Roles, usuarios y permisos | [Seguridad_Permisos.sql](sql/tecnico/Seguridad_Permisos/Seguridad_Permisos.sql) · [Investigación](sql/tecnico/Seguridad_Permisos/Investigacion.md) |
+| Triggers y auditoría | Triggers de stock en compras y ventas, y auditoría de mermas | [Trigger_StockCompras.sql](sql/tecnico/Trigger_Auditoria/Trigger_StockCompras.sql) · [Trigger_StockVentas.sql](sql/tecnico/Trigger_Auditoria/Trigger_StockVentas.sql) · [Merma_Auditoria.sql](sql/tecnico/Trigger_Auditoria/Merma_Auditoria.sql) · [Investigación](sql/tecnico/Trigger_Auditoria/Investigacion.md) |
 
 ## 👥 Integrantes
 
