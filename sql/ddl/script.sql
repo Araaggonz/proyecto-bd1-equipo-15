@@ -137,6 +137,9 @@ CREATE TABLE Merma
   CONSTRAINT FK_merma_producto FOREIGN KEY (id_producto) REFERENCES Producto(id_producto)
 );
 
+
+---RESTRICCIONES
+
 ALTER TABLE Producto
 ADD CONSTRAINT CK_producto_stock_actual CHECK (stock_actual >= 0);
 
@@ -163,3 +166,22 @@ ADD CONSTRAINT CK_merma_cantidad CHECK (cantidad > 0);
 
 ALTER TABLE Comprobante
 ADD CONSTRAINT UQ_comprobante_numero UNIQUE (numero);
+
+
+----verificar valores existentes de la tabla comprobantes
+SELECT DISTINCT estado_
+FROM Comprobante;
+
+
+---agrego restriccion CHECK
+
+ALTER TABLE Comprobante
+ADD CONSTRAINT CK_comprobante_estado
+CHECK (estado_ IN ('Pendiente', 'Pagado', 'Cancelado'));
+
+
+--verificar que se creo y se creo la restriccion
+SELECT name
+FROM sys.check_constraints
+WHERE parent_object_id = OBJECT_ID('Comprobante');
+
