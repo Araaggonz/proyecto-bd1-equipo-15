@@ -47,9 +47,18 @@ La integridad de los datos se garantiza a nivel de motor mediante **claves prima
 
 ## 🎯 Objetivos
 
-Diseñar una base de datos que permita gestionar de manera organizada y consistente la información de las operaciones comerciales del vivero.
+## Objetivo General 
 
-Se busca garantizar la **integridad de los datos** y facilitar la gestión de clientes, proveedores, productos, compras, ventas y stock.
+Diseñar e implementar una base de datos relacional en SQL Server que gestione de forma **integra, consistente y trazable** la información comercial de un vivero: Productos, clientes, proveedores, compras, ventas, stock, mermas y comprobantes. 
+
+## Objetivos específicos 
+
+- Relevar el alcance y las **reglas de negocio** (explicitas e implícitas) del vivero, y traducirlas a un modelo de datos.
+- Construir el **modelo conceptual** (diagrama entidad-relación) y derivar el **modelo lógico**, aplicando normalización para eliminar redundancias.
+- Garantizar la **consistencia del stock**, evitando valores negativos y reflejando los movimientos de compras, ventas y mermas.
+- Preservar la **integridad histórica**: precios por operación, comprobantes y registros con operaciones asociadas, que se desactivan en lugar de eliminarse.
+- Cargar **datos de prueba** (DML) y resolver **consultas y reportes** de ventas que den soporte a la toma de decisiones.
+- Incorporar mecanismos avanzados del motor (Etapa 5): **seguridad por usuarios, roles y permisos**, y **optimización de consultas mediante índices**.
 
 ## Alcance
 
