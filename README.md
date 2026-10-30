@@ -90,7 +90,8 @@ El sistema contempla, entre otras, las siguientes funcionalidades:
 | 3 | Implementación SQL | Documentación del DDL | [ddl-sql.md](docs/etapa-03/ddl-sql.md) |
 | 4 | Consultas SQL y reportes | Reporte agregado | [reporte-agregado.md](docs/etapa-04/reporte-agregado.md) |
 | 4 | Consultas SQL y reportes | Consulta de negocio avanzada | [consulta-negocio-avanzada.sql](docs/etapa-04/consulta-negocio-avanzada.sql) |
-| 5 | Temas técnicos y evolución | Documentación de la etapa 5 | *Próximamente* |
+| 5 | Temas técnicos y evolución | Procedimientos y funciones | [Procedimiento_Funciones.md](docs/etapa-05/Procedimiento_Funciones.md) |
+| 5 | Temas técnicos y evolución | Triggers | [Trigger.md](docs/etapa-05/Trigger.md) |
 
 
 ## Modelos
