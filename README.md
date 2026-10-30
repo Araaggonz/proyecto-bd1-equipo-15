@@ -120,11 +120,11 @@ El sistema contempla, entre otras, las siguientes funcionalidades:
 
 ### Temas técnicos
 
-| Tema | Descripción | Archivos |
-|:----:|-------------|----------|
-| Procedimientos y funciones | Procedimientos almacenados, funciones y comparaciones | [Procedimiento.sql](sql/tecnico/Procedimiento_Funciones/Procedimiento.sql) · [Funciones.sql](sql/tecnico/Procedimiento_Funciones/Funciones.sql) · [Comparaciones.sql](sql/tecnico/Procedimiento_Funciones/Comparaciones.sql) · [Documentación](sql/tecnico/Procedimiento_Funciones/tema-1-procedimientos-funciones.md) |
-| Seguridad y permisos | Roles, usuarios y permisos | [Seguridad_Permisos.sql](sql/tecnico/Seguridad_Permisos/Seguridad_Permisos.sql) · [Investigación](sql/tecnico/Seguridad_Permisos/Investigacion.md) |
-| Triggers y auditoría | Triggers de stock en compras y ventas, y auditoría de mermas | [Trigger_StockCompras.sql](sql/tecnico/Trigger_Auditoria/Trigger_StockCompras.sql) · [Trigger_StockVentas.sql](sql/tecnico/Trigger_Auditoria/Trigger_StockVentas.sql) · [Merma_Auditoria.sql](sql/tecnico/Trigger_Auditoria/Merma_Auditoria.sql) · [Investigación](sql/tecnico/Trigger_Auditoria/Investigacion.md) |
+| Tema | Descripción | Archivos | Evidencias |
+|:----:|-------------|----------|:----------:|
+| Procedimientos y funciones | Procedimientos almacenados, funciones y comparaciones | [Procedimiento.sql](sql/tecnico/Procedimiento_Funciones/Procedimiento.sql) · [Funciones.sql](sql/tecnico/Procedimiento_Funciones/Funciones.sql) · [Comparaciones.sql](sql/tecnico/Procedimiento_Funciones/Comparaciones.sql) · [Documentación](sql/tecnico/Procedimiento_Funciones/tema-1-procedimientos-funciones.md) | [Ver evidencias](sql/tecnico/Procedimiento_Funciones/Evidencias) |
+| Seguridad y permisos | Roles, usuarios y permisos | [Seguridad_Permisos.sql](sql/tecnico/Seguridad_Permisos/Seguridad_Permisos.sql) · [Investigación](sql/tecnico/Seguridad_Permisos/Investigacion.md) | [Ver evidencias](sql/tecnico/Seguridad_Permisos/Evidencias) |
+| Triggers y auditoría | Triggers de stock en compras y ventas, y auditoría de mermas | [Trigger_StockCompras.sql](sql/tecnico/Trigger_Auditoria/Trigger_StockCompras.sql) · [Trigger_StockVentas.sql](sql/tecnico/Trigger_Auditoria/Trigger_StockVentas.sql) · [Merma_Auditoria.sql](sql/tecnico/Trigger_Auditoria/Merma_Auditoria.sql) · [Investigación](sql/tecnico/Trigger_Auditoria/Investigacion.md) | [Ver evidencias](sql/tecnico/Trigger_Auditoria/Evidencias) |
 
 ## 👥 Integrantes
 
