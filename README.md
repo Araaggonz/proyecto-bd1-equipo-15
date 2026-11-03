@@ -94,7 +94,7 @@ El sistema contempla, entre otras, las siguientes funcionalidades:
 | 5 | Temas técnicos y evolución | Triggers | [Trigger.md](docs/etapa-05/Trigger.md) |
 | 5 | Temas técnicos y evolución | Seguridad | [seguridad.md](docs/etapa-05/seguridad.md) |
 | 5 | Temas técnicos y evolución | Transacciones y transacciones anidadas | [Transacciones.md](docs/etapa-05/Transacciones.md) |
-| 5 | Temas técnicos y evolución | Optimización de consultas | .[Informe.md](docs/etapa-05/índice.md) |
+| 5 | Temas técnicos y evolución | Optimización de consultas |[Informe.md](docs/etapa-05/índices.md) |
 
 
 
@@ -129,7 +129,8 @@ El sistema contempla, entre otras, las siguientes funcionalidades:
 | Seguridad y permisos | Roles, usuarios y permisos | [Seguridad_Permisos.sql](sql/tecnico/Seguridad_Permisos/Seguridad_Permisos.sql) · [Investigación](sql/tecnico/Seguridad_Permisos/Investigacion.md) | [Ver evidencias](sql/tecnico/Seguridad_Permisos/Evidencias) |
 | Triggers y auditoría | Triggers de stock en compras y ventas, y auditoría de mermas | [Trigger_StockCompras.sql](sql/tecnico/Trigger_Auditoria/Trigger_StockCompras.sql) · [Trigger_StockVentas.sql](sql/tecnico/Trigger_Auditoria/Trigger_StockVentas.sql) · [Merma_Auditoria.sql](sql/tecnico/Trigger_Auditoria/Merma_Auditoria.sql) · [Investigación](sql/tecnico/Trigger_Auditoria/Investigacion.md) | [Ver evidencias](sql/tecnico/Trigger_Auditoria/Evidencias) |
 | Transacciones | Manejo de transacciones, COMMIT, ROLLBACK y transacciones anidadas | [Transacciones.sql](sql/tecnico/Transacciones/Transacciones.sql) · [Documentación](sql/tecnico/Transacciones/Tema%202%20-%20Transacciones.md) | [Ver evidencias](sql/tecnico/Transacciones/Evidencias) |
-| Optimización | Optimización de búsqueda por medio del uso de índices | [Indice.sql] (sql/tecnico/índice/Indice.sql) • [Investigación] (sql/tecnico/indice/Informe.md) | [Ver evidencias] (sql/tecnica/índice/Evidencias) |
+| Optimización | Optimización de búsqueda por medio del uso de índices | [Indice.sql](sql/tecnico/índices/Índices.sql) • [Investigación](sql/tecnico/índices/Informe.md) | [Ver evidencias](sql/tecnica/índices/Evidencias) |
+
 ## 👥 Integrantes
 
 - Craballo Jara Luciana Abril
