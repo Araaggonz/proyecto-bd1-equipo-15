@@ -94,7 +94,7 @@ El sistema contempla, entre otras, las siguientes funcionalidades:
 | 5 | Temas técnicos y evolución | Triggers | [Trigger.md](docs/etapa-05/Trigger.md) |
 | 5 | Temas técnicos y evolución | Seguridad | [seguridad.md](docs/etapa-05/seguridad.md) |
 | 5 | Temas técnicos y evolución | Transacciones y transacciones anidadas | [Transacciones.md](docs/etapa-05/Transacciones.md) |
-| 5 | Temas técnicos y evolución | Optimización de consultas |[Informe.md](docs/etapa-05/índices.md) |
+| 5 | Temas técnicos y evolución | Optimización de consultas |[Informe.md](docs/etapa-05/índices) |
 
 
 
