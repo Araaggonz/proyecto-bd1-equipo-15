@@ -108,6 +108,12 @@ El sistema contempla, entre otras, las siguientes funcionalidades:
 
 </div>
 
+<div align="center">
+
+![Modelo relacional](modelos/relacional/IMG-20261019-WA0067.jpg)
+
+</div>
+
 
 ## Código SQL
 
