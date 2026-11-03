@@ -129,7 +129,7 @@ El sistema contempla, entre otras, las siguientes funcionalidades:
 | Seguridad y permisos | Roles, usuarios y permisos | [Seguridad_Permisos.sql](sql/tecnico/Seguridad_Permisos/Seguridad_Permisos.sql) · [Investigación](sql/tecnico/Seguridad_Permisos/Investigacion.md) | [Ver evidencias](sql/tecnico/Seguridad_Permisos/Evidencias) |
 | Triggers y auditoría | Triggers de stock en compras y ventas, y auditoría de mermas | [Trigger_StockCompras.sql](sql/tecnico/Trigger_Auditoria/Trigger_StockCompras.sql) · [Trigger_StockVentas.sql](sql/tecnico/Trigger_Auditoria/Trigger_StockVentas.sql) · [Merma_Auditoria.sql](sql/tecnico/Trigger_Auditoria/Merma_Auditoria.sql) · [Investigación](sql/tecnico/Trigger_Auditoria/Investigacion.md) | [Ver evidencias](sql/tecnico/Trigger_Auditoria/Evidencias) |
 | Transacciones | Manejo de transacciones, COMMIT, ROLLBACK y transacciones anidadas | [Transacciones.sql](sql/tecnico/Transacciones/Transacciones.sql) · [Documentación](sql/tecnico/Transacciones/Tema%202%20-%20Transacciones.md) | [Ver evidencias](sql/tecnico/Transacciones/Evidencias) |
-| Optimización | Optimización de búsqueda por medio del uso de índices | [Indice.sql](sql/tecnico/índices/Índices.sql) • [Investigación](sql/tecnico/índices/Informe.md) | [Ver evidencias](sql/tecnica/índices/Evidencias) |
+| Optimización | Optimización de búsqueda por medio del uso de índices | [Indice.sql](sql/tecnico/índices/Índices.sql) • [Investigación](sql/tecnico/índices/Informe.md) | [Ver evidencias](sql/tecnico/índices/Evidencias) |
 
 ## 👥 Integrantes
 
